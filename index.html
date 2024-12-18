@@ -1,0 +1,622 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+
+    
+
+
+
+
+
+
+
+<head>
+    <meta charset="utf-8">
+
+    
+        
+        
+             <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=EDGE">
+             <meta name="viewport" content="width=device-width, initial-scale=1.0,  minimum-scale=1.0">
+        
+    
+
+    <meta name="format-detection" content="telephone=no"/>
+
+    <link rel="shortcut icon" type="image/x-icon" href="/etc/designs/ee-id-web/images/core/favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="60x60" href="/etc/designs/ee-id-web/images/core/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/etc/designs/ee-id-web/images/core/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/etc/designs/ee-id-web/images/core/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/etc/designs/ee-id-web/images/core/favicons/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="/etc/designs/ee-id-web/images/core/favicons/favicon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="/etc/designs/ee-id-web/images/core/favicons/favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="/etc/designs/ee-id-web/images/core/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/etc/designs/ee-id-web/images/core/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/etc/designs/ee-id-web/images/core/favicons/favicon-32x32.png" sizes="32x32">
+    <meta name="msapplication-TileColor" content="#007B85">
+    <meta name="msapplication-TileImage" content="/etc/designs/ee-id-web/images/core/favicons/mstile-144x144.png">
+
+
+    
+        
+        
+               <link rel="stylesheet" href="https://id.ee.co.uk/etc/designs/ee-id-web/css/core/main.784dbc1aa.min.css">
+        
+    
+
+    
+    
+    <script>window.currentState = {"current":{"firstName":"","domain":"id.ee.co.uk","destination":"ID Portal","display":"page","error":"","minNav":false,"hasMobileRole":false,"hasHomeRole":false,"analyticsMap":{},"features":null,"email":"","type":"Regular","viewName":"registration/spoof-index","stateName":"default","viewStateType":"DEFAULT","metaDataEntries":{"firstName":{"constraint":"[^.]*?"},"hasHomeRole":{"constraint":"[^.]*?"},"domain":{"constraint":"[^.]*?"},"display":{"constraint":"[^.]*?"},"destination":{"constraint":"[^.]*?"},"minNav":{"constraint":"[^.]*?"},"type":{"constraint":"[^.]*?"},"error":{"constraint":"[^.]*?"},"hasMobileRole":{"constraint":"[^.]*?"},"email":{"constraint":"[^.]*?"}}}}</script>
+    
+        
+    
+
+
+    
+    <title>
+        My EE register
+    </title>
+    <meta name="description" content="Register for a My EE account and get all the info you need at the tap of a finger or the click of a mouse.">
+
+    
+
+
+
+
+
+
+
+
+    
+    
+        <meta name="robots" content="index,follow">
+    
+
+
+    <script type="text/javascript" src="/ruxitagentjs_ICA7NVfghqrtux_10303241106123517.js" data-dtconfig="app=2a9cb3e32ead27b8|featureHash=ICA7NVfghqrtux|cux=1|xb=.*bt^bs.tt^bs.omtrdc^bs.net.*^p.*zr^bs.ee^bs.co^bs.uk.*^p.*google-analytics.com.*^p.*collection^bs.decibelinsight^bs.net.*^p.*doubleclick^bs.net.*^p.*vip^bs.timezonedb^bs.com.*^p.*insights^bs.uniqodo^bs.com.*^p.*udc-neb^bs.kampyle^bs.com.*^p.*imp2^bs.nowinteract^bs.com.*^p.*smetrics^bs.*^p.*dpm^bs.demdex^bs.net.*^p.*resources^bs.digital-cloud-uk^bs.medallia^bs.eu.*|rdnt=1|uxrgce=1|cuc=9hu61abe|mdl=mdcc2=20|mel=100000|dpvc=1|md=mdcc1=bdocument.referrer,mdcc2=bnavigator.userAgent,mdcc3=dutm_source,mdcc4=dutm_medium,mdcc5=dutm_campaign,mdcc6=dutm_term,mdcc7=dutm_content,mdcc8=adiv[class^e^dqnotification notification--error ^dq] ^rb div ^rb strong[class^e^dqnotification__heading notification__heading--error^dq],mdcc9=a.error|lastModification=1733698006919|tp=500,50,0|agentUri=/ruxitagentjs_ICA7NVfghqrtux_10303241106123517.js|reportUrl=/rb_bf88365yqv|rid=RID_-567972305|rpid=1177538373|domain=ee.co.uk"></script><link rel="stylesheet" href="https://ee.co.uk/exp/ge/index.css" />
+    <link rel="stylesheet" href="https://ee.co.uk/exp/ge/ee.css" />
+    <link rel="stylesheet" href="https://ee.co.uk/exp/ge/global-elements.css" />
+
+    
+
+
+
+
+
+
+
+
+<script>
+
+var EE = EE || {};
+
+EE.properties = {
+    identityEndpoint:			'https://api.ee.co.uk/v1/identity',
+    loginEndpoint:              'https://api.ee.co.uk/v1/identity/authorize/login',
+    getNetworkSessionEndpoint:  'http://api.ee.co.uk/v1/network/session',
+    getMsISDNEndpoint:			'https://api.ee.co.uk/id/msisdn',
+
+    tokenEndpoint:              'https://api.ee.co.uk/v1/identity/token',
+    authorizeEndpoint:          'https://api.ee.co.uk/v1/identity/authorize',
+    userInfoEndpoint:           'https://api.ee.co.uk/v1/identity/userinfo',
+    personIdentitiesEndpoint:   'https://api.ee.co.uk/v1/person-identities/self',
+    checkTokenEndpoint:         'https://api.ee.co.uk/v1/identity/check_token',
+    registrationEndpoint:       'https://api.ee.co.uk/v1/person-credentials',
+    passwordResetEndpoint:      'https://api.ee.co.uk/v1/person-credentials',
+    changePasswordEndpoint:     'https://api.ee.co.uk/v1/person-credentials/password-change',
+    changeNameEndpoint:         'https://api.ee.co.uk/v1/person-credentials',
+    changEmailEndpoint:         'https://api.ee.co.uk/v1/person-credentials/email-change',
+    verifyEmailEndpoint:        'https://api.ee.co.uk/v1/person-credentials/email-verification-requests',
+    resendEmailEndpoint:        'https://api.ee.co.uk/v1/person-credentials',
+    logoutEndpoint:             'https://api.ee.co.uk/v1/identity/logout',
+    revokeEndpoint:             'https://api.ee.co.uk/v1/identity/revoke',
+    loginRedirectEndpoint:      'https://id.ee.co.uk/login',
+    setPasswordEndpoint:        'https://api.ee.co.uk/v1/person-credentials/password-application-request',
+    pageTimeoutDelay:           '3600000',
+    ranTimeoutDelay:            '5000',
+    pageTimeoutRedirect:        'https://ee.co.uk',
+    pageAccessDelay:            '850000',
+    legacyEmailDomains:         'freeserve.co.uk,fsbusiness.co.uk,fslife.co.uk,fsnet.co.uk,fsworld.co.uk,new.labour.org.uk,wanadoo.co.uk,orangehome.co.uk',
+
+    resendEmailStep:            '/id/resend-email',
+    changeEmailStep:            '/id/change-email',
+    changeMobileNumberStep:     '/id/change-mobile-number',
+    changePasswordStep:         '/id/change-password',
+    emailChangedStep:           '/id/email-changed',
+    emailValidationPattern:		"^[a-zA-Z0-9!$%&\'*+=\\.?_`{|}~-]{1,64}(?:\\.[a-zA-Z0-9!$%&\'*=?^_`{|}~-])*@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,100}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,100}[a-zA-Z0-9])?)*$",
+	nameValidationPattern:		"^[a-zA-Z\\\'\\- ]{2,64}$",
+	passwordValidationPattern:	"^(?=[A-Za-z\\d!\"\u00A3$%^&*()<>?{}\\[\\]:;\'#:@~\u00AC`<>\\\/\\|\\.\\-=_,+]{8,30}$)(?=.*?\\d)(?=.*?[A-Z])(?=.*?[a-z]).*",
+	contactNumberValidationPattern:	"^07\\d{9}$",
+    associationAsyncDelay:       '5000',
+    resetPasswordAsyncDelay:     '2000',
+    utagVersionPath:             '4.0.201911211658',
+    otpLengthRange:              '6,6',
+    emailInputMaxLength:         '125',
+    adobeAnalyticsConfig:        'https://assets.adobedtm.com/launch-ENc69d733bf4824e17ac296b1064825816.min.js',
+    allowedRPEventOrigin:        '',
+
+    features: {
+	    
+             TOGGLE_NAME : false
+            ,
+        
+             SKIP_CHECK_RP_ORIGIN : true
+            ,
+        
+             SKIP_TEALIUM_EXCLUSION : true
+            ,
+        
+             PASSWORD_STRENGTH_METER : false
+            ,
+        
+             FLEX_CONTEXT : false
+            ,
+        
+             SINGLE_IDENTITY_PROFILE : true
+            ,
+        
+             RADIO_CHECK : true
+            ,
+        
+             REGISTRATION_CAPTCHA : false
+            ,
+        
+             VERIFY_EMAIL_RESULT_PAGE : true
+            ,
+        
+             EDIT_PROFILE_IN_SAF : true
+            
+        
+    }
+
+}
+
+</script>
+
+
+    <!-- Add adobe tagging metrics -->
+    <script type="text/javascript">
+      var utag_data = {
+
+      };
+    </script>
+
+    
+        <script src="https://id.ee.co.uk/ee-static/js/clientlibs_headjs.min.js"></script>
+    
+
+
+    
+        <link rel="stylesheet" href="https://zr.ee.co.uk/eesg/production-v2.3.27/ee_core_myee.min.css">
+    
+</head>
+
+    
+
+
+
+
+
+
+
+<body class="inline-search state-default">
+    <div class="lc lc-ee">
+        
+                 
+                    <div id="global-elements-wrapper"> 
+                        
+                            
+                            
+                                <div id="fef-header"></div>
+                            
+                                              
+                       
+                        <div id="fef-contents-with-footer">
+                            <div id="maincontent">
+                                
+
+
+
+
+<div id="ajaxSvgIcons" style="display:none">
+    
+</div>
+                                
+
+
+
+
+
+
+
+
+
+                                
+        
+        <main id="main" tabindex="0" role="main" class="myee-content">
+            
+
+
+
+
+
+
+<section id="full-width-header" class="full-width-header">
+    <div class="container">
+        <div class="full-width-header__title" id="page-title">
+            <h1>Register</h1>
+        </div>
+
+
+    
+        <div class="full-width-header__sub-title EE">
+            <div class="full-width-header__sub-title__row">
+                <p>
+	<strong>to My EE</strong>
+</p>
+<p>
+	The snappy way to stay on top of all your EE online accounts<br>
+</p>
+            </div>
+            
+                <hr class="full-width-header__sub-title-hr">
+
+                
+                    <div class="full-width-header__sub-title__info" data-icon-type="#eei_chevron_right">
+                        <p>Already registered? <a href="https://id.ee.co.uk/id/login">Log in</a></p>
+
+                    </div>
+                
+            
+        </div>
+    
+
+    </div>
+
+</section>
+
+
+            <div class="relative">
+                
+
+
+
+<div class="stepper container container--small margin-top-2em">
+    <nav class="stepper__nav">
+        <ul class="stepper__list">
+            <li class="stepper__item
+                stepper__item--active">
+                <div class="stepper__item__step">
+                    1
+                </div>
+                <div class="stepper__item__description" id="flow_step1">
+                    <p>Register</p>
+                </div>
+            </li>
+            <li class="stepper__item
+                ">
+                <div class="stepper__item__step">
+                    2
+                </div>
+                <div class="stepper__item__description" id="flow_step2">
+                    <p>Verify</p>
+                </div>
+            </li>
+            <li class="stepper__item
+                ">
+                <div class="stepper__item__step">
+                    3
+                </div>
+                <div class="stepper__item__description" id="flow_step3">
+                    <p>Link</p>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+
+                <div class="container container--small margin-top-1em">
+                    <div class="col span-6 EE">
+                        
+
+
+
+
+
+	
+		
+		
+			
+			<div role="group" class="eeid-fieldset " aria-labelledby="fieldset_36a86009-9319-4ad3-a23c-82ecc3f68038">
+				<div class="eeid-legend" id="fieldset_36a86009-9319-4ad3-a23c-82ecc3f68038">
+					Register create account
+				</div>
+				 
+                            <form action="/register-spoof" name="userRegistrationSpoofForm" id="userRegistrationSpoofForm" method="POST" data-validation-eeidform class="theme--fog">
+<input type="hidden" name="csrf" value="zBd5gtllYhSXW8vUNdJn" id="csrf"/>
+
+
+                                <div class="form__group">
+                                    
+
+
+
+
+
+
+
+
+
+
+	
+		
+		  
+			<label class="form__label  false" for="username" >
+		  
+	
+
+		<span class="form__label__text"><p>Email address:</p></span>
+
+		
+
+		
+
+	</label>
+
+	
+
+
+                                    <div class="form__group-element" data-validation-field>
+                                        <input name="email" id="username" type="email" maxlength="125" autocomplete="email" pattern="[^.]*?" value data-validation="email" placeholder="example@mail.com" class="form__control"/>
+<svg class="icon-svg form__icon form__icon--error hidden-important" focusable="false"><use xlink:href="#eei_alert_func"/></svg>
+<svg class="icon-svg form__icon form__icon--valid hidden-important" focusable="false"><use xlink:href="#eei_validate_func"/></svg>
+
+                                        
+
+
+
+
+ 
+
+
+<span 
+	id="email-error" 
+	class="error form__error-text hidden-important " 
+	role="alert" 
+	style=""
+	data-validation-error-email
+>
+	<p>Please enter a valid email address</p>
+</span>
+                                    </div>
+                                </div>
+                                <div class="EE">
+                                    <button name="spoofSubmitButton" id="spoofSubmitButton" type="submit" class="btn no-disable margin-left-0 margin-top-0 margin-bottom-0 not-desktop-margin-left">
+                                        
+                                        <p>Next</p>
+                                    </button>
+
+                                </div>
+
+                            </form>
+
+                        
+			</div>
+		
+	
+
+
+                    </div>
+                    <div class="col span-6">
+                        <div class="message-panel-container">
+                            <div class="message-panel message-panel--dark-bg">
+                                <div class="message-panel__title">
+                                    <h2><strong>Why register?</strong></h2>
+
+                                </div>
+                                <ul class="message-panel__ticked-container">
+                                    <li class="message-panel__ticked-container__item">
+                                        <p>Manage your mobile devices</p>
+                                    </li>
+                                    <li class="message-panel__ticked-container__item">
+                                        <p>Manage your home broadband</p>
+                                    </li>
+                                    <li class="message-panel__ticked-container__item">
+                                        <p>Check your usage and pay bills</p>
+                                    </li>
+                                    <li class="message-panel__ticked-container__item">
+                                        <p>See your upgrade options</p>
+                                    </li>
+                                    <li class="message-panel__ticked-container__item">
+                                        <p>Join the conversation in our community</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end .container -->
+            </div>
+
+        </main><!-- .end main -->
+
+        <script src="/etc/designs/ee-id-web/js/core/main.784dbc1aa.min.js"></script>
+
+        
+
+
+
+
+<script src="/etc/designs/ee-id-web/js/core/insights-init.784dbc1aa.min.js"></script>
+
+
+
+		<script src="/etc/designs/ee-id-web/js/core/insights.784dbc1aa.min.js"></script>
+
+
+
+<script>
+	var EE = EE || {};
+
+	(function($, window, EE) {
+	    $(document).ready(function() {
+	        if (EE.editMode) {
+	            return;
+	        }
+
+            var insights = {
+                associatedProducts: '',
+                associatedProductsSuccessful: '',
+                banRoleType_legalOwner: '',
+                brand: 'EE',
+                broadband_account: '',
+                ctn: '',
+                ctn_dashboard: '',
+                ctnRoleType_endUser: '',
+                ctnRoleType_legalOwner: '',
+                destination: 'ID Portal',
+                domain: 'id.ee.co.uk',
+                error: '',
+                event: '',
+                event_association: '',
+				event_captcha: '',
+                event_email_verification: '',
+                event_login: '',
+                event_password: '',
+                event_ran: '',
+                event_registration: '',
+                event_status: "",
+                flow: '',
+                homeroleno:'',
+                loginStatus: 'LoggedOut',
+                mobileroleno:'',
+                notificationStatus: '',
+                orderRoute: '',
+                page: 'personal > MYEEID > registration',
+                pageName: 'SEO_Register',
+                pageType:'Registration',
+                superSection: 'Personal',
+                timepart_last_loggedin: '',
+                type:'Regular',
+            };
+
+	        EE.eeIdTracking = EE.Insights.create(insights);
+	    });
+	})($, window, EE);
+</script>
+
+        <script src="/etc/designs/ee-id-web/js/registration/registration.784dbc1aa.min.js"></script>
+
+
+    
+                                <input type="hidden" id="is_loggedin_id" value="false">
+                            </div>
+                                
+                                    
+                                    
+                                        <div id="fef-footer"></div>
+                                    
+                                         
+                
+                        </div>
+                    </div>
+                              
+                
+            
+    </div>
+
+    
+       
+
+        <script src="https://zr.ee.co.uk/eesg/production-v2.3.27/ee_core_myee.min.js"></script>
+        
+        
+        <script>
+            $(document).ready(function() {
+            $("#ajaxSvgIcons").load('https://zr.ee.co.uk/eesg/production-v2.3.27/svg-core/symbol/svg/sprite.symbol.svg');
+            });
+        </script>
+        <script
+            src="https://ee.co.uk/exp/ge/global-elements-render.js"
+            id="fef-global-element-loader"
+        ></script>
+    
+    <script>
+      if (!EE.editMode) {
+		var EESSOSignIn = document.getElementById('is_loggedin_id').value;
+
+		//A fix for window.location.origin in Internet Explorer
+        if (!window.location.origin) {
+          window.location.origin = window.location.protocol + '//' + window.location.hostname + (window.location.port ? ':' + window.location.port: '');
+        }
+
+        var EE = EE || {};
+
+        var EEIDKeepAliveConfig = {
+          originUrl: window.location.origin,
+          endpointLogOut: '/id/logout',
+          endpointTimeout: '/id/revoke'
+        };
+
+        (function (w, d, s, c, EE, t, m, l, h) {
+          EE.keepAlive = c;
+          t = d.createElement(s);
+          t.async = 1;
+          t.src = EE.keepAlive.originUrl + '/etc/designs/ee-id-web/js/core/eeid-keepalive-prompt.784dbc1aa.min.js';
+          l = d.createElement('link');
+          l.rel = 'stylesheet';
+          l.href = EE.keepAlive.originUrl + '/etc/designs/ee-id-web/css/core/IMFE-keep-alive-modal.784dbc1aa.min.css';
+          h = d.getElementsByTagName('head')[0];
+          h.appendChild(t);
+          h.appendChild(l);
+        })(window, document, 'script', EEIDKeepAliveConfig, EE);
+
+      }
+
+    </script>
+
+    <script src="https://id.ee.co.uk/etc/designs/ee-id-web/js/core/eeid-keepalive-insights.784dbc1aa.min.js"></script>
+
+
+    <script>
+        if (!EE.editMode) {
+            var EE = EE || {};
+
+            var EEIDSessionManagementConfig = {
+                opProviderOriginUrl: 'https://id.ee.co.uk',
+                opIframeUrl: '/id/opiframe',
+                rpIframeUrl: '/id/rpiframe',
+                authorizationEndpoint: '/id/passive-authorize',
+                logOutEndpoint: '/id/logout',
+                pollInterval: '3000',
+                init: window.EESSOSignIn
+            };
+
+            window.EE.sessionManagement = EEIDSessionManagementConfig;
+        }
+    </script>
+
+    <script src="https://id.ee.co.uk/etc/designs/ee-id-web/js/core/session-management-init.784dbc1aa.min.js"></script>
+
+
+<script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=3&cb=499198368" async></script></body>
+
+
+
+</html>
+
